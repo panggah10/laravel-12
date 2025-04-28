@@ -2,14 +2,15 @@
 
 namespace App\Models;
 
+use Illuminate\Database\Eloquent\Factories\HasFactory as FactoriesHasFactory;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Database\Factories\HasFactory;
+// use Illuminate\Database\Factories\HasFactory;
 class Product extends Model
 {
     // untuk mengisi data ke dalam database
-    use HasFactory;
+    use FactoriesHasFactory;
 
-    protected $fillable=[
+    protected $fillable = [
         'image',
         'title',
         'description',
